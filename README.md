@@ -26,6 +26,7 @@ These dependencies can be installed via `pip`, for example:
 
 ```bash
 pip install tkinter selenium webdriver_manager matplotlib pandas
+```
 
 ## Usage
 
