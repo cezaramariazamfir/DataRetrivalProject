@@ -13,7 +13,8 @@ This project is designed to retrieve product information, specifically products 
 This project utilizes Python and various libraries to interact with the HumbleBundle website, retrieve product information, and perform basic data operations such as displaying the data, generating graphs, and saving the data to an Excel file.
 
 
-  <img src="https://github.com/cezaramariazamfir/DataRetrivalProject/assets/102034759/cafecd86-5dbf-4f73-97cd-1f4d3076925c" alt="Alt text" width="1000";">
+ ![image](https://github.com/cezaramariazamfir/DataRetrivalProject/assets/102034759/f42750b8-6700-4119-83b1-4597f3d0d0d9)
+
 
 
 
