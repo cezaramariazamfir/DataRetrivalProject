@@ -1,6 +1,6 @@
 # Data Retrieval Project
 
-This project is designed to retrieve product information, specifically products and prices, from the HumbleBundle website. It provides a simple interface for retrieving, displaying, and saving the data in various formats.
+This project is designed to retrieve product information, specifically products and prices, from the [HumbleBundle][https://www.humblebundle.com/store/search?sort=bestselling&genre=vr&hmb_source=navbar] website. It provides a simple interface for retrieving, displaying, and saving the data in various formats.
 
 ## Table of Contents
 
