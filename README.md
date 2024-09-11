@@ -1,6 +1,6 @@
 # Data Retrieval Project
 
-This project is designed to retrieve product information, specifically products and prices, from the [HumbleBundle](https://www.humblebundle.com/store/search?sort=bestselling&genre=vr&hmb_source=navbar) website. It provides a simple interface for retrieving, displaying, and saving the data in various formats.
+This project is designed to retrieve product information, specifically products and prices, from the [PuraVida](https://www.puravidabracelets.com/collections/earrings) website. It provides a simple interface for retrieving, displaying, and saving the data in various formats.
 
 ## Table of Contents
 
@@ -10,10 +10,11 @@ This project is designed to retrieve product information, specifically products 
   
 ## Introduction
 
-This project utilizes Python and various libraries to interact with the HumbleBundle website, retrieve product information, and perform basic data operations such as displaying the data, generating graphs, and saving the data to an Excel file.
+This project utilizes Python and various libraries to interact with the PuraVida website, retrieve product information, and perform basic data operations such as displaying the data, generating graphs, and saving the data to an Excel file.
 
 
- ![image](https://github.com/cezaramariazamfir/DataRetrivalProject/assets/102034759/f42750b8-6700-4119-83b1-4597f3d0d0d9)
+![image](https://github.com/user-attachments/assets/050e91c2-e70d-46f5-87ac-7e566f65a5ea)
+
 
 
 
@@ -52,19 +53,31 @@ To use the project:
 
    This will generate and display a bar graph showing the prices of the retrieved products.
 
-4. **Optional: Click the "Display Matrix" button to view the product information in a separate window.**
 
-   This will open a new window displaying the retrieved product information in a matrix format.
+   ![image](https://github.com/user-attachments/assets/5ccf1c54-87a1-4a0b-9f89-229c872e754f)
 
-5. **Enter a name for the Excel file in the provided text box.**
+
+5. **Optional: Click the "Products Display" button to view the product information in a separate window.**
+
+   This will open a new window displaying the retrieved products' information.
+
+   
+   ![image](https://github.com/user-attachments/assets/4283af13-7726-4458-ae28-24f372d870df)
+
+
+6. **Enter a name for the Excel file in the provided text box.**
 
    Provide a desired name for the Excel file where you want to save the retrieved data.
 
-6. **Click the "Save File Name" button to save the entered file name.**
+7. **Click the "Save File Name" button to save the entered file name.**
 
    This will save the entered file name for later use when saving the data.
 
-7. **Click the "Save Excel File" button to save the retrieved product information to an Excel file.**
+8. **Click the "Save Excel File" button to save the retrieved product information to an Excel file.**
 
    This will prompt you to select a directory where you want to save the Excel file. Once the file is saved, a message will indicate whether the operation was successful.
+
+
+   ![image](https://github.com/user-attachments/assets/0f879ee1-1df2-440d-a50e-6c5b2b4eaed7)
+
 
