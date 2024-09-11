@@ -21,23 +21,22 @@ def saveInput():
 
 # This function retrives the data from the humblebundle website using selenium and webdrivers
 def retriveData():
-    url = "https://www.humblebundle.com/store/search?sort=bestselling&genre=vr&hmb_source=navbar"
+    url = "https://www.puravidabracelets.com/collections/earrings"
     driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()))
     driver.get(url)
     driver.implicitly_wait(10)
 
     global products
     global prices
-
-    elementHTML = driver.find_element("class name", "entities-list")
-    children_element = elementHTML.find_elements("class name", "entity-block-container")
+    elementHTML = driver.find_element("class name", "collection__grid")
+    children_element = elementHTML.find_elements("class name", "product-card")
 
     for child in children_element:
 
-        title = child.find_element("class name", "entity-title").get_attribute('innerText')
+        title = child.find_element("class name", "product-card__title").get_attribute('innerText')
         products.append(title)
 
-        price = child.find_element("class name", "price").get_attribute('innerText')
+        price = child.find_element("class name", "money").get_attribute('innerText')
         prices.append(price)
 
     if products != [] and prices != []:
@@ -56,7 +55,7 @@ def displayMatrix():
     matrix_window = tk.Toplevel(root)
     matrix_window.title("Matrix Display")
 
-    matrix_label = tk.Label(matrix_window, text="Matrix Display", font = ('Verdana', 18))
+    matrix_label = tk.Label(matrix_window, text="Products Display", font = ('Verdana', 18))
     matrix_label.pack()
 
     matrix_text = tk.Text(matrix_window, font = ('Verdana', 10))
@@ -107,7 +106,7 @@ label1.pack()
 label2 = tk.Label(root, text = "by Cezara Maria Zamfir", font = ('Verdana', 12))
 label2.pack(pady= 10)
 
-label3 = tk.Label(root, text = "This app retrives the products and prices from the HumbleBundle website.", font = ('Verdana', 10))
+label3 = tk.Label(root, text = "This app retrives the products and prices from the PuraVida website.", font = ('Verdana', 10))
 label3.pack(pady = (10, 10))
 
 button1 = tk.Button(root, text = "Retrive Data", width = 20, font = ('Verdana', 13), background = 'white', command = retriveData)
@@ -116,7 +115,7 @@ button1.pack(pady = (20,5))
 button2 = tk.Button(root, text = "Display Graph", width = 20, font = ('Verdana', 13), background = 'white', command = displayGraph)
 button2.pack(pady = 5)
 
-button3 = tk.Button(root, text = "Display Matrix", width = 20, font = ('Verdana', 13), background = 'white', command = displayMatrix)
+button3 = tk.Button(root, text = "Products Display", width = 20, font = ('Verdana', 13), background = 'white', command = displayMatrix)
 button3.pack(pady = 5)
 
 button4 = tk.Button(root, text = "Save Excel File", width = 20, font = ('Verdana', 13), background = 'white', command = saveExcelFile)
@@ -132,4 +131,3 @@ save_button = tk.Button(root, text="Save File Name", width = 20, font = ('Verdan
 save_button.pack(pady = (2, 10))
 
 root.mainloop()
-
